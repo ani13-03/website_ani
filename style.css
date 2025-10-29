@@ -42,6 +42,10 @@ header {
 }
 
 /* ------------------ NAVIGASI------------------ */
+.main-nav {
+    display: none; 
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -65,7 +69,7 @@ nav ul li a:hover {
 
 /* Hamburger Menu */
 .hamburger-menu {
-  display: none;
+  display: block;
   cursor: pointer;
   padding: 5px;
 }
