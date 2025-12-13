@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/* ------------------ RESET ------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------ BODY ------------------ */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #1a1a1a;
+}
+
+/* ------------------ HEADER ------------------ */
+header {
+  background-color: #000;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffb6c1;
+}
+
+/* ------------------ NAVIGASI------------------ */
+.main-nav {
+    display: none; 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffb6c1;
+}
+
+/* Hamburger Menu */
+.menu-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu-nav {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .menu-nav.active {
+        display: flex;
+    }
+}
+
+
+/* ------------------ MAIN CONTENT ------------------ */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+main a {
+  color: #ffb6c1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+main a:hover {
+  color: #ff69b4;
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+h1, h2, h3 {
+  color: #ffb6c1;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* ------------------ PROFIL ------------------ */
+#profil {
+  text-align: center;
+  padding: 3rem 1rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.profile-photo-container {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 0 auto 2rem;
+  overflow: hidden;
+  box-shadow:
+    0 0 60px rgba(255, 182, 193, 0.4),
+    0 0 25px rgba(255, 182, 193, 0.8);
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 182, 193, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+}
+
+.greeting {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.greeting .highlight {
+  color: #ffb6c1;
+}
+
+.role {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.typing-effect {
+  color: #ffb6c1;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  color: #ccc;
+}
+
+/* Tombol "Hubungi Saya" */
+.hire-me-button {
+  display: inline-block;
+  background-color: #ffb6c1;
+  color: #1a1a1a;
+  padding: 12px 35px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.hire-me-button:hover {
+  background-color: #ff69b4;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+}
+
+/* ------------------ SOSIAL MEDIA ------------------ */
+.social-icons {
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #333;
+  border: 1px solid #ffb6c1;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background-color: #ffb6c1;
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px #ffb6c1;
+}
+
+.social-icons i {
+  color: #ffb6c1;
+  font-size: 1.5rem;
+}
+
+.social-icons a:hover i {
+  color: #1a1a1a;
+}
+
+/* ------------------ TENTANG SAYA ------------------ */
+#tentang_saya {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+#about p {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+/* ------------------ TABLE (KARYA) ------------------ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th, table td {
+  border: 1px solid #444;
+  padding: 1rem;
+  text-align: left;
+  color: #fff;
+}
+
+table th {
+  background-color: #ff69b4;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+table td a {
+  color: #ffb6c1;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+table td a:hover {
+  color: #ff69b4;
+  text-decoration: underline;
+}
+
+table img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* ------------------ SKILLS ------------------ */
+#skills ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#skills ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #3d3d3d;
+  font-size: 1.1rem;
+  text-align: left;
+  transition: color 0.3s ease;
+}
+
+#skills ul li:hover {
+  color: #ffb6c1;
+}
+
+#skills ul li strong {
+  color: #ffb6c1;
+  display: inline-block;
+  width: 150px;
+}
+
+/* ------------------ TIMELINE ------------------ */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #ffb6c1;
+}
+
+.timeline-item {
+  margin-bottom: 2.5rem;
+  padding-left: 40px;
+  background-color: #333;
+  border-left: 4px solid #ffb6c1;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+}
+
+.timeline-item h3 {
+  color: #ffb6c1;
+  margin-bottom: 0.25rem;
+  font-size: 1.2rem;
+}
+
+.timeline-item p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* Titik timeline */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  background-color: #ff69b4;
+  border: 3px solid #1a1a1a;
+  border-radius: 50%;
+}
+
+/* ------------------ TESTIMONI ------------------ */
+.testimonial-card-image {
+  max-width: 700px;
+  margin: 2rem auto;
+  background-color: #333;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 0 4px #ffb6c1;
+  color: #fff;
+  font-style: italic;
+}
+
+.testimonial-card-image .quote-text {
+  padding: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.testimonial-card-image .quote-footer-image {
+  background-color: #000;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* ------------------ CONTACT CARD ------------------ */
+.contact-card {
+  text-align: center;
+  margin: 40px auto;
+  color: #fff;
+}
+
+.contact-card h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #ffb6c1;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.map-container iframe {
+  width: 80%;
+  max-width: 700px;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.contact-card a {
+  color: #ffb6c1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------ FORM KONTAK ------------------ */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form label {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+form input,
+form textarea {
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #ffb6c1;
+  box-shadow: 0 0 5px #ffb6c1;
+}
+
+form button {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background-color: #ffb6c1;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ff69b4;
+}
+
+/* ------------------ FOOTER ------------------ */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #000;
+  color: #ccc;
+  margin-top: 2rem;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .main-nav.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .main-nav.active ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .main-nav.active ul li {
+    margin: 10px 0;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+  }
+
+  .greeting {
+    font-size: 1.8rem;
+  }
+
+  .role {
+    font-size: 2.2rem;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.5rem;
+  }
+
+  #skills ul li strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline::before {
+    left: 5px;
+  }
+
+  .timeline-item {
+    padding-left: 20px;
+  }
+
+  .timeline-item::before {
+    left: -5px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .map-container iframe {
+    width: 95%;
+  }
+}
