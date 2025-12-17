@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Portofolio Ani Rohmayani</title>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- FONT & ICON -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="navbar navbar-expand-md navbar-dark bg-black sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-pink" href="index.html">Ani Rohmayani</a>
+
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#menuNav"
+      aria-controls="menuNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <nav class="collapse navbar-collapse" id="menuNav">
+      <ul class="navbar-nav ms-auto text-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="karya.html">Karya</a></li>
+        <li class="nav-item"><a class="nav-link" href="ketrampilan.html">Keterampilan</a></li>
+        <li class="nav-item"><a class="nav-link active" href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main class="container my-5">
+
+  <!-- ===== INFORMASI KONTAK ===== -->
+  <section class="contact-card">
+    <h2>Informasi Kontak</h2>
+
+    <p>
+      <strong>Alamat:</strong><br>
+      Jl. Rejosari V No.25, Rejosari,<br>
+      Kec. Semarang Timur, Kota Semarang,<br>
+      Jawa Tengah
+    </p>
+
+    <!-- PETA -->
+    <div class="map-container">
+      <iframe
+        src="https://maps.google.com/maps?width=100%25&height=300&hl=id&q=Jl.%20Rejosari%20V%20No.25,%20Rejosari,%20Kec.%20Semarang%20Timur,%20Kota%20Semarang,%20Jawa%20Tengah&t=&z=15&ie=UTF8&iwloc=B&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <p>
+      <a href="https://www.google.com/maps/place/Jl.+Rejosari+V+No.25,+Semarang"
+         target="_blank">
+        🗺️ Lihat Lokasi Akurat di Google Maps
+      </a>
+    </p>
+
+    <p><strong>Email:</strong> anirahmayani784@gmail.com</p>
+  </section>
+
+  <!-- ===== SOSIAL MEDIA ===== -->
+  <section class="text-center mt-4">
+    <h3>Sosial Media</h3>
+
+    <div class="social-icons">
+      <a href="https://wa.me/6285784458003" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/anii_rhmay" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@anirahmayani3568" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/@4nii_rhmay" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://github.com/ani13-03" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <!-- ===== FORM KOMENTAR ===== -->
+  <section class="mt-5">
+    <h3 class="text-center">Kirim Komentar</h3>
+
+    <form action="#" method="post">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Komentar:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>&copy; 2025 Portofolio Ani. Semua hak dilindungi.</p>
+</footer>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
